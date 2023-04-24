@@ -12,10 +12,7 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 import org.uv.Entyties.Producto;
-/**
- *
- * @author juand
- */
+
 public class DAOVenta_Detalle implements IDAOGeneral<Detalle_Venta, Integer> {
 
     @Override

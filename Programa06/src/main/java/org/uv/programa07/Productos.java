@@ -78,24 +78,22 @@ public class Productos extends javax.swing.JInternalFrame {
 
         jLabel1.setText("Id:");
 
-        vistaID.setText("aki va el id automatico");
+        vistaID.setText("id automatico");
 
         jLabel2.setText("Nombre:");
 
-        vistaNombre.setText("aki va el name del producto");
+        vistaNombre.setText("producto");
 
         jLabel3.setText("Precio:");
 
-        vistaPrecio.setText("aki va el precio");
+        vistaPrecio.setText("precio");
 
-        btnSiguiente.setIcon(new javax.swing.ImageIcon("D:\\6toSemestre\\Desarrollo de aplicaciones\\NetBeansProjects\\Programa06\\src\\main\\java\\org\\uv\\Imagenes\\siguiente.png")); // NOI18N
         btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSiguienteActionPerformed(evt);
             }
         });
 
-        bntAnterior.setIcon(new javax.swing.ImageIcon("D:\\6toSemestre\\Desarrollo de aplicaciones\\NetBeansProjects\\Programa06\\src\\main\\java\\org\\uv\\Imagenes\\anterior.png")); // NOI18N
         bntAnterior.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bntAnteriorActionPerformed(evt);
@@ -108,7 +106,6 @@ public class Productos extends javax.swing.JInternalFrame {
             }
         });
 
-        bntFiltrar.setIcon(new javax.swing.ImageIcon("D:\\6toSemestre\\Desarrollo de aplicaciones\\NetBeansProjects\\Programa06\\src\\main\\java\\org\\uv\\Imagenes\\buscar.jpg")); // NOI18N
         bntFiltrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bntFiltrarActionPerformed(evt);
@@ -138,9 +135,8 @@ public class Productos extends javax.swing.JInternalFrame {
 
         jLabel4.setText("Stock");
 
-        vistaStock.setText("aki va el stock");
+        vistaStock.setText("stock");
 
-        Refresh.setIcon(new javax.swing.ImageIcon("D:\\6toSemestre\\Desarrollo de aplicaciones\\NetBeansProjects\\Programa06\\src\\main\\java\\org\\uv\\Imagenes\\refrescar.png")); // NOI18N
         Refresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RefreshActionPerformed(evt);
@@ -169,7 +165,7 @@ public class Productos extends javax.swing.JInternalFrame {
                                 .addComponent(btnEliminar))
                             .addGroup(contenedorLayout.createSequentialGroup()
                                 .addComponent(bntAnterior)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(contenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel4)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)

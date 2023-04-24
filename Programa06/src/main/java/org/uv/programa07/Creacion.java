@@ -59,9 +59,8 @@ public class Creacion extends javax.swing.JFrame {
 
         Stock.setText("Stock:");
 
-        IDEntrada.setText("aqui ira el ID");
+        IDEntrada.setText("Aquí va el ID");
 
-        Confirmar.setIcon(new javax.swing.ImageIcon("D:\\6toSemestre\\Desarrollo de aplicaciones\\NetBeansProjects\\Programa06\\src\\main\\java\\org\\uv\\Imagenes\\guardar.png")); // NOI18N
         Confirmar.setText("Aceptar");
         Confirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,7 +68,6 @@ public class Creacion extends javax.swing.JFrame {
             }
         });
 
-        Regresar.setIcon(new javax.swing.ImageIcon("D:\\6toSemestre\\Desarrollo de aplicaciones\\NetBeansProjects\\Programa06\\src\\main\\java\\org\\uv\\Imagenes\\regresar.png")); // NOI18N
         Regresar.setText("Cancelar");
         Regresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

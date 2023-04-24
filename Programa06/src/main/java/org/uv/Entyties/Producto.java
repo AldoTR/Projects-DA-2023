@@ -9,11 +9,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-/**
- *
- * @author juand
- */
-
 @Entity
 @Table(name="productos")
 public class Producto {

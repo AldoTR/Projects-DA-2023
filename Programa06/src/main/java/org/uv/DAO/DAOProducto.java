@@ -11,10 +11,6 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.uv.Entyties.Producto;
 
-/**
- *
- * @author juand
- */
 public class DAOProducto implements IDAOGeneral<Producto, Integer> {
 
     @Override

@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package GestionadorHora;
 import java.util.Date;
 import java.text.DateFormat;
@@ -9,10 +6,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-/**
- *
- * @author JUAN_DAVID
- */
+
 public class Horario {
     //private static String formato="yyyy/MM/dd HH:mm:ss";
     //private static DateTimeFormatter formato_hora=DateTimeFormatter.ofPattern(formato);
@@ -45,10 +39,4 @@ public class Horario {
         }
         return date;
     }
-    /*public static void main(String []args){
-        System.out.println(setFechaHora());
-    }*/
-    /*public static String calcular_tiempotrans(String fecha_inicio, String fecha_fin){
-        LocalDateTime inicio=LocalDateTime.of(0, 0, 0, 0, 0, 0);
-    }*/
 }

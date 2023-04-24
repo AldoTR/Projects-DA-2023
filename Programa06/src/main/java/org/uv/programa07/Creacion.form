@@ -137,7 +137,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="IDEntrada">
           <Properties>
-            <Property name="text" type="java.lang.String" value="aqui ira el ID"/>
+            <Property name="text" type="java.lang.String" value="Aqu&#xed; va el ID"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
@@ -145,9 +145,6 @@
         </Component>
         <Component class="javax.swing.JButton" name="Confirmar">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="D:\6toSemestre\Desarrollo de aplicaciones\NetBeansProjects\Programa06\src\main\java\org\uv\Imagenes\guardar.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Aceptar"/>
           </Properties>
           <Events>
@@ -159,9 +156,6 @@
         </Component>
         <Component class="javax.swing.JButton" name="Regresar">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="D:\6toSemestre\Desarrollo de aplicaciones\NetBeansProjects\Programa06\src\main\java\org\uv\Imagenes\regresar.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Cancelar"/>
           </Properties>
           <Events>

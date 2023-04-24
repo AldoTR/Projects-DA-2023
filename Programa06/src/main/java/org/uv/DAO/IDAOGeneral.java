@@ -6,10 +6,6 @@ package org.uv.DAO;
 
 import java.util.List;
 
-/**
- *
- * @author juand
- */
 public interface IDAOGeneral <T, ID>{
     public T create(T p);
     public boolean delete(ID id);

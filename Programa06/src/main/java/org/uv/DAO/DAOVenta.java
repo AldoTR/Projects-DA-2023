@@ -14,10 +14,6 @@ import javax.persistence.EntityManager;
 import org.uv.Entyties.Detalle_Venta;
 import org.uv.Entyties.Venta;
 
-/**
- *
- * @author juand
- */
 public class DAOVenta implements IDAOGeneral<Venta, Integer>{
 
     @Override
