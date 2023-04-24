@@ -6,10 +6,6 @@ package org.uv.programa05;
 
 import java.sql.Connection;
 
-/**
- *
- * @author btoarriola
- */
 public abstract class TransaccionDB <T>{
     protected T p;
     protected  TransaccionDB(T p){

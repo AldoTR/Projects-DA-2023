@@ -4,20 +4,13 @@
  */
 package org.uv.programa07;
 
-/**
- *
- * @author atrcu
- */
-
-    /*
 import java.util.List;
 
-public interface IDAOGeneral <T, ID> {
+public interface IDAOGeneral <T,ID>{
     public T create(T p);
     public boolean delete(ID id);
     public T update(T p, ID id);
     
     public List<T> findAll();
-    public T FindById(ID id);
-    
-*/
+    public T findById(ID id);
+}

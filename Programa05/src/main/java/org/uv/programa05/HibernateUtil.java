@@ -4,10 +4,6 @@
  */
 package org.uv.programa05;
 
-/**
- *
- * @author btoarriola
- */
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

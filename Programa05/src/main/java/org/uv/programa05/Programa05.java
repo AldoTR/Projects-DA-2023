@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package org.uv.programa05;
 
 import java.util.List;
@@ -9,10 +5,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.hibernate.Session;
 
-/**
- *
- * @author btoarriola
- */
 public class Programa05 {
 
     public static void main(String[] args) {

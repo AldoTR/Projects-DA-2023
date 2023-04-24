@@ -4,80 +4,74 @@
  */
 package org.uv.programa07;
 
-import java.util.List;
+    import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.persistence.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-/**
- *
- * @author atrcu
- */
-/*
-public class DAOProducto implements IDAOGeneral<Producto, Long>{
+public class DAOProducto implements IDAOGeneral<Producto, Long> {
+
     @Override
-    public Empleado create(Empleado p) {
-        Session session = HibernateUtil.getSession();
-        Transaction t = session.beginTransaction();
-        session.save(p);
-        t.commit();
-        session.close();
-        return p;
+    public Producto create(Producto p) {
+    Session session=HibernateUtil.getSession();
+    Transaction t= session.beginTransaction();
+    session.save(p);
+    t.commit();
+    session.close();
+    return p ;
     }
 
     @Override
     public boolean delete(Long id) {
-        Session session = HibernateUtil.getSession();
-        Transaction t = session.beginTransaction();
-        Empleado empleado = session.get(Empleado.class, id);
-        if (empleado != null) {
-            session.delete(empleado);
-            t.commit();
-            session.close();
-            return true;
+         Session session = HibernateUtil.getSession();
+        Transaction tx = session.beginTransaction();
+        boolean res;
+        Producto producto = findById(id);
+        if (producto == null) {
+            res = false;
         } else {
-            t.rollback();   //revertir los cambios realizados en la trans y volver al anterior.
-            session.close();
-            return false;
+            session.delete(producto);
+            res = true;
         }
-    }
-
+        tx.commit();
+        session.close();
+        return res;
+       }
 
     @Override
     public Producto update(Producto p, Long id) {
         Session session = HibernateUtil.getSession();
-        Transaction t= session.beginTransaction();
-        Producto producto = session.get(Producto.class, id);
-        
-        producto.setNombre(p.getNombre());
-        producto.setDireccion(p.getDireccion());
-        producto.setTelefono(p.getTelefono());
-        
-        session.update(producto);
+        Transaction t = session.beginTransaction();
+        session.update(p);
         t.commit();
         session.close();
-        return producto;
-    }
+        return p;
+       }
 
     @Override
     public List<Producto> findAll() {
-        Session session = HibernateUtil.getSession();
-        Transaction t = session.beginTransaction();
-        String sql = "SELECT * FROM empleados";
-        Query query = session.createNativeQuery(sql, Producto.class);
-        List<Producto> productos = query.getResultList();      
-        session.close();
-        return empleados;
+       Session session=HibernateUtil.getSession();
+       Transaction t= session.beginTransaction();
+       List<Producto> lstProd=session.createQuery("from Producto",Producto.class).list();
+       t.commit();
+       session.close();
+       return lstProd;
     }
-
 
     @Override
-    public Producto FindById(Long id) {
-        Session session = HibernateUtil.getSession();
-        Producto producto = session.get(Producto.class, id);
+    public Producto findById(Long id) {
+        Session session= HibernateUtil.getSession();
+        Transaction t= session.beginTransaction();
+        Producto p=session.get(Producto.class, id);
+        t.commit();
         session.close();
-        return empleado;
-    }
+        return p;
+        }
 
+  
+   
+
+    
 }
-*/
